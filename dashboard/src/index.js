@@ -70,7 +70,7 @@ root.render(
         <Routes>
 
           <Route
-            path="/dashboard/*"
+            path="/dashboard"
             element={<Home />}
           />
 
