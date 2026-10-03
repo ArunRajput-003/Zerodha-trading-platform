@@ -78,7 +78,7 @@ const Login = () => {
 
         setTimeout(() => {
           window.location.replace(
-             "YOUR_DEPLOYED_DASHBOARD_URL/dashboard"
+             "https://zerodha-trading-dashboard.netlify.app/dashboard"
           );
         }, 1000);
 
