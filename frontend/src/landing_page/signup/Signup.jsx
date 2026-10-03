@@ -54,7 +54,7 @@ const Signup = () => {
 
     try {
       const { data } = await axios.post(
-        "https://zerodha-trading-platform-fpy2.onrender.com",
+        "https://zerodha-trading-platform-fpy2.onrender.com/signup",
         {
           email,
           password,

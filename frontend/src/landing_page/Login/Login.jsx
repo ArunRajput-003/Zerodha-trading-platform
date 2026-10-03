@@ -47,7 +47,7 @@ const Login = () => {
 
     try {
       const { data } = await axios.post(
-        "https://zerodha-trading-platform-fpy2.onrender.com",
+        "https://zerodha-trading-platform-fpy2.onrender.com/login",
         {
           email,
           password,

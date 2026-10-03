@@ -21,8 +21,8 @@ const { OrdersModel } = require("./Model/OrdersModel");
 app.use(
   cors({
     origin: [
-      "https://zerodha-trading-frontend1.netlify.app/",
-      "https://zerodha-trading-dashboard.netlify.app/",
+      "https://zerodha-trading-frontend1.netlify.app",
+      "https://zerodha-trading-dashboard.netlify.app",
       
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
