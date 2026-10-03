@@ -75,7 +75,7 @@ const Positions = () => {
   useEffect(() => {
     axios
       .get(
-        "http://localhost:4000/allPositions",
+        "https://zerodha-trading-platform-fpy2.onrender.com/allPositions",
         {
           withCredentials: true,
         }

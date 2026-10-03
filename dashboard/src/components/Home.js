@@ -110,7 +110,7 @@ const Home = () => {
          */
 
         const { data } = await axios.post(
-          "http://localhost:4000/",
+          "https://zerodha-trading-platform-fpy2.onrender.com/",
           {},
           {
             withCredentials: true,
@@ -134,7 +134,7 @@ const Home = () => {
            * Backend says token is missing/invalid.
            */
           window.location.href =
-            "http://localhost:5173/login";
+            "https://zerodha-trading-frontend1.netlify.app/login";
         }
 
       } catch (error) {
@@ -144,7 +144,7 @@ const Home = () => {
         );
 
         window.location.href =
-          "http://localhost:5173/login";
+          "https://zerodha-trading-frontend1.netlify.app/login";
       }
     };
 

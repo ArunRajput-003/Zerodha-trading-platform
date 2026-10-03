@@ -107,7 +107,7 @@ const BuyActionWindow = ({ uid }) => {
     try {
 
       await axios.post(
-        "http://localhost:4000/newOrder",
+        "https://zerodha-trading-platform-fpy2.onrender.com/newOrder",
 
         {
           name: uid,
