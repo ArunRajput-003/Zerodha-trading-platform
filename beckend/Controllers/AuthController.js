@@ -81,7 +81,7 @@
 //   path: "/",
 // });
 //      res.status(200).json({ message: "User logged in successfully", success: true });
-     
+
 //   } catch (error) {
 //     console.error(error);
 //   }
@@ -141,11 +141,10 @@ module.exports.Signup = async (req, res) => {
 
     res.cookie("token", token, {
       httpOnly: true,
-      secure: false,
-      sameSite: "lax",
+      secure: true,
+      sameSite: "none",
       path: "/",
     });
-
     return res.status(201).json({
       success: true,
       message:
@@ -220,8 +219,8 @@ module.exports.Login = async (req, res) => {
 
     res.cookie("token", token, {
       httpOnly: true,
-      secure: false,
-      sameSite: "lax",
+      secure: true,
+      sameSite: "none",
       path: "/",
     });
 
